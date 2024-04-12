@@ -10,7 +10,7 @@ customers = Blueprint('customers', __name__)
 def get_customers():
     cursor = db.get_db().cursor()
     cursor.execute('select company, last_name,\
-        first_name, job_title, business_phone from customers')
+        first_name, job_title, business_phone, id from customers')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -20,6 +20,23 @@ def get_customers():
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
+
+@customers.route('/customers', methods=['PUT'])
+def update_customer():
+    cust_info = request.json
+    cust_id = cust_info['id']
+    first = cust_info['first_name']
+    last = cust_info['last_name']
+    company = cust_info['company']
+    business_phone = cust_info['business_phone']
+    job_title = cust_info['job_title']
+
+    query = 'UPDATE customers SET first_name = %s, last_name = %s, company = %s, business_phone = %s, job_title = %s WHERE id = %s'
+    data = (first, last, company, business_phone, job_title, cust_id)
+    cursor = db.get_db().cursor()
+    r = cursor.execute(query, data)
+    db.get_db().commit()
+    return 'customer updated'
 
 # Get customer detail for customer with particular userID
 @customers.route('/customers/<userID>', methods=['GET'])
