@@ -18,6 +18,7 @@ This repo contains a boilerplate setup for spinning up 3 Docker containers:
 ## How to insert fake data 
 
 1.Open the fake.py file
+
 2.Follow the instruction at the bottom of the file, run the instructed functions accordingly
 
 
