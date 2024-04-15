@@ -71,7 +71,7 @@ services:
      volumes:
        - ./stacks:/appsmith-stacks
      restart: unless-stopped
-
+     
 secrets:
   secret_db_pw:
     file: ./secrets/db_password.txt

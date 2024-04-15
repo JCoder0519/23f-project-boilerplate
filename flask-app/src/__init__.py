@@ -34,10 +34,15 @@ def create_app():
 
     # Import the various Beluprint Objects
     from src.artist.artists import artists
-
+    from src.listeners.listeners import listeners
+    from src.song_comments.song_comments import comments
+    
     # Register the routes from each Blueprint with the app object
     # and give a url prefix to each
     app.register_blueprint(artists,   url_prefix='/a')
+    app.register_blueprint(listeners,   url_prefix='/l')
+    app.register_blueprint(comments,   url_prefix='/c')
+ 
 
     # Don't forget to return the app object
     return app

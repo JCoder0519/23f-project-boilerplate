@@ -2,8 +2,6 @@ from faker import Faker
 import pymysql
 import random
 
-
-
 fake = Faker()
 
 connection = pymysql.connect(host='localhost', user='root', password='321123', db='WYY', port=3200)
@@ -228,11 +226,6 @@ def generate_relationships_and_supports():
             cursor.execute('INSERT INTO at_songs (Artist_ID, Song_ID) VALUES (%s, %s);', (artist_id, song_id))
 
                 
-
-
-
-
-
 def generate_analytics():
     for _ in range(200):
         age_groups = fake.random_element(elements=('18-24', '25-34', '35-44', '45-54', '55+'))
@@ -339,13 +332,6 @@ def generate_pod_follows():
     except pymysql.Error as e:
         print(f"An error occurred: {e}")
         connection.rollback()
-
-
-
-
-
-
-
 
 # Run first then comment out
 #generate_listeners()
