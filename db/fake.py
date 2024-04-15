@@ -333,7 +333,7 @@ def generate_pod_follows():
         print(f"An error occurred: {e}")
         connection.rollback()
 
-# Run first then comment out
+# Run the following functions first then comment out
 #generate_listeners()
 #generate_artists()
 #generate_albums()
