@@ -19,7 +19,7 @@ This repo contains a boilerplate setup for spinning up 3 Docker containers:
 
 1.Open the fake.py file
 
-2.Follow the instruction at the bottom of the file, run the instructed functions accordingly
+2.Follow the instruction at the bottom of the file, run the functions accordingly to instruction (Rememeber to comment out the function that has been run!)
 
 
 
