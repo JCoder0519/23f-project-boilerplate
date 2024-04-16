@@ -24,10 +24,12 @@ This repo contains a boilerplate setup for spinning up 3 Docker containers:
 ## Project Presentation video link
 
 ## Team memebers
-
 1.Junhua Chen   
+
 2.Lang Shao
+
 3.Jiada Li
+
 4.Qingyu Jiang
 
 
