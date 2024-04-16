@@ -21,6 +21,19 @@ This repo contains a boilerplate setup for spinning up 3 Docker containers:
 
 2.Follow the instruction at the bottom of the file, run the functions accordingly to instruction (Rememeber to comment out the function that has been run!)
 
+## Project Presentation video link
+
+## Team memebers
+1.Junhua Chen   
+
+2.Lang Shao
+
+3.Jiada Li
+
+4.Qingyu Jiang
+
+
+
 
 
 
