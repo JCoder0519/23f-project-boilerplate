@@ -22,7 +22,7 @@ This repo contains a boilerplate setup for spinning up 3 Docker containers:
 2.Follow the instruction at the bottom of the file, run the functions accordingly to instruction (Rememeber to comment out the function that has been run!)
 
 ## Project Presentation video link
-
+[https://drive.google.com/file/d/1rJSyPmhIhcwCS8ubpfQfzTG3LQ_5flWG/view?usp=drive_link]
 ## Team memebers
 1.Junhua Chen   
 
